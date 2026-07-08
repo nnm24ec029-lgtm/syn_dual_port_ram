@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: Ashley Dsouza
 // 
-// Create Date:06.07.2026 10:15:32
+// Create Date: 07.07.2026 23:17:07
 // Design Name: 
-// Module Name: RR.Arb.v
+// Module Name: Round_Robin_Arb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -18,7 +18,7 @@ The round Robin Arbiter Rotates priority among requesters
 //////////////////////////////////////////////////////////////////////////////////
 
 
-         module RR_Arb(
+module Round_Robin_Arb(
                         output reg grant_A, grant_B,
                         input request_A, request_B,clk,nRST
                         );

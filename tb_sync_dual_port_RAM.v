@@ -1,10 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: Ashwin Nayak
+// Engineer: Ashley Dsouza
 // 
-// Create Date: 21.04.2026 14:24:17
+// Create Date: 07.07.2026 14:24:17
 // Design Name: Synchronous Dual port RAM
-// Module Name: Sync_Dual_port_Ram_tb
+// Module Name: tb_sync_dual_port_RAM.v
+
 // Project Name: Memory Interface Verification System
 /* 
 // Description: 

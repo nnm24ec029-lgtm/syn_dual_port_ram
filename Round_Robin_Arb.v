@@ -28,26 +28,26 @@ module Round_Robin_Arb(
                         begin
                                 grant_A = 1'b0;
                                 grant_B = 1'b0;
-                                last_grant = 1'b0;
+                              
                             
                                 if (request_A && !request_B)
                                 begin
-                                    grant_A <= 1'b1;// A wins
+                                    grant_A = 1'b1;// A wins
                                 end
                                 else if (!request_A && request_B)
                                 begin
-                                    grant_B <= 1'b1;// B wins
+                                    grant_B = 1'b1;// B wins
                                 end
                                 else if (request_A && request_B)
                                 begin
                                     // round robin using last_grant
                                     if (last_grant == 1'b0)
                                     begin 
-                                        grant_B <= 1'b1;// B wins
+                                        grant_B = 1'b1;// B wins
                                     end
                                     else 
                                     begin
-                                        grant_A <= 1'b1;// A wins
+                                        grant_A = 1'b1;// A wins
                                     end
                                 end
                             end
